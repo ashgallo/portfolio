@@ -1,28 +1,19 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Links from './Links';
+import Intro from './Intro';
+import { Divider } from 'semantic-ui-react';
+import Projects from './Projects';
+import Skills from './Skills'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div>
+    <Links />
+    <Intro />
+    <Divider />
+    <Projects />
+    <Divider />
+    <Skills />
+  </div>
+)
 
 export default App;
