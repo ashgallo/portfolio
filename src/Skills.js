@@ -16,7 +16,7 @@ import { Header, Grid, Image } from 'semantic-ui-react';
 
 
 const Skills = () => (
-  <div>
+  <div style={styles.background}>
     <Header size='huge' style={styles.header}>Skills</Header>
     <Grid column='equal' textAlign='center' style={styles.grid}>
       <Grid.Row>
@@ -71,6 +71,9 @@ const Skills = () => (
 )
 
 const styles = {
+  background: {
+    backgroundColor: 'rgba(211, 211, 211, 0.776)'
+  },
   header: {
     margin: '40px 10px',
     textAlign: 'left',
@@ -78,8 +81,10 @@ const styles = {
     fontSize: '30px',
   },
   grid: {
+    textAlign: 'center',
     display: 'block',
-    marginTop: '40px'
+    margin: '40px 10px 20px 80px',
+    fontFamily: 'Lora, serif',
   }
 }
 

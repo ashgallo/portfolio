@@ -5,18 +5,18 @@ import Plantmama from './assets/projects/plantmama.png';
 import Choreninja from './assets/projects/choreninja.png';
 
 const Projects = () => (
-  <div>
+  <div style={styles.background}>
     <Header size='huge' style={styles.header}>My work</Header>
     <Grid columns={3} divided style={styles.grid}>
       <Grid.Row>
         <Grid.Column>
-          <Image src={Tacotaco} />
+          <Image src={Tacotaco} rounded />
         </Grid.Column>
         <Grid.Column>
-          <Image src={Plantmama} />
+          <Image src={Plantmama} rounded />
         </Grid.Column>
         <Grid.Column>
-          <Image src={Choreninja} />
+          <Image src={Choreninja} rounded />
         </Grid.Column>
       </Grid.Row>
 
@@ -57,6 +57,9 @@ const Projects = () => (
 )
 
 const styles = {
+  background: {
+    border: '2px solid lightgrey',
+  },
   header: {
     margin: '40px 10px',
     textAlign: 'left',

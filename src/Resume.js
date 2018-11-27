@@ -24,7 +24,6 @@ class ResumeModal extends Component {
   }
 }
 
-
 const styles = {
   button: {
     backgroundColor: '#444445',
@@ -35,10 +34,3 @@ const styles = {
 }
 
 export default ResumeModal;
-
-  //<Modal trigger={<Button size='tiny' style={styles.button}>Resume</Button>}>
-    //<Modal.Header>Ashley Margallo</Modal.Header>
-    //<Modal.Content image>
-     //<Image src={Resume} />
-    //</Modal.Content>
- // </Modal>

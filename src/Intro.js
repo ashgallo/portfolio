@@ -4,7 +4,7 @@ import Headshot from './assets/headshot.png';
 
 const Intro = () => (
   <div style={styles.intro}>
-    <Image src={Headshot} size='small' circular style={styles.img}/>
+    <Image src={Headshot} size='medium' circular style={styles.img}/>
     <p>Hello, I'm so glad you're here.  I'm Ashley, a junior web developer based out of Salt Lake City. </p>
   </div>
 )
